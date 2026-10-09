@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio Backend Developer</title>
+  <meta name="description" content="Portofolio Backend Developer / Software Engineer - Berfokus pada perancangan REST API, logika backend, dan manajemen database.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-symbol">&lt;/&gt;</span>
+        <span class="logo-text">Backend.Dev</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Buka navigasi">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav class="nav" id="navMenu">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Section 1: Home (Hero) -->
+    <section class="section hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span> Terbuka untuk peluang Backend Developer
+          </div>
+          <h1 class="hero-title">Backend Developer & Software Engineer</h1>
+          <p class="hero-tagline">Membangun sistem backend dan REST API yang andal, efisien, dan terstruktur.</p>
+          <p class="hero-desc">
+            Lulusan S1 Teknik Informatika yang berfokus pada pengembangan backend web dan REST API menggunakan PHP, Laravel, Python, serta pengelolaan database MySQL dan PostgreSQL.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Lihat Project</a>
+            <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">backend-profile.json</span>
+            </div>
+            <pre class="terminal-body"><code>{
+  <span class="token-key">"role"</span>: <span class="token-str">"Backend Developer"</span>,
+  <span class="token-key">"languages"</span>: [<span class="token-str">"PHP"</span>, <span class="token-str">"Python"</span>],
+  <span class="token-key">"framework"</span>: <span class="token-str">"Laravel"</span>,
+  <span class="token-key">"api"</span>: <span class="token-str">"REST API"</span>,
+  <span class="token-key">"databases"</span>: [<span class="token-str">"MySQL"</span>, <span class="token-str">"PostgreSQL"</span>],
+  <span class="token-key">"devops_tools"</span>: [<span class="token-str">"Git"</span>, <span class="token-str">"Docker"</span>],
+  <span class="token-key">"status"</span>: <span class="token-str">"Ready for Opportunities"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2: About Me -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Tentang</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Saya adalah lulusan S1 Teknik Informatika yang memiliki minat mendalam pada pengembangan sistem backend dan rekayasa perangkat lunak web. Selama masa studi dan pengerjaan berbagai proyek, saya berfokus pada perancangan arsitektur server-side, integrasi REST API, dan permodelan basis data relasional untuk memastikan sistem beroperasi secara efisien dan konsisten.
+            </p>
+            <p>
+              Dalam alur pengembangan, saya terbiasa menggunakan PHP dengan Laravel serta Python, didukung pengelolaan database MySQL dan PostgreSQL. Saya juga memanfaatkan Git untuk pengelolaan versi kode dan Docker untuk standardisasi lingkungan aplikasi. Saya menyenangi tantangan seputar perancangan skema relasi data, pengamanan endpoint autentikasi, serta pembangunan logika bisnis yang bersih dan mudah dipelihara.
+            </p>
+          </div>
+          <div class="about-meta">
+            <div class="meta-card">
+              <h3 class="meta-title">Target Role</h3>
+              <p class="meta-value">Backend Developer / Software Engineer</p>
+            </div>
+            <div class="meta-card">
+              <h3 class="meta-title">Pendidikan</h3>
+              <p class="meta-value">S1 Teknik Informatika</p>
+            </div>
+            <div class="meta-card">
+              <h3 class="meta-title">Fokus Keahlian</h3>
+              <p class="meta-value">API Architecture, Database Design & Backend Business Logic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3: Skills -->
+    <section class="section skills" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Kompetensi</span>
+          <h2 class="section-title">Technical Skills</h2>
+          <p class="section-desc">Kumpulan keahlian dan teknologi yang digunakan dalam pengembangan backend:</p>
+        </div>
+        <div class="skills-grid">
+          <!-- Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-icon">💻</div>
+            <h3 class="category-name">Programming Languages</h3>
+            <ul class="skill-items">
+              <li class="skill-tag">PHP</li>
+              <li class="skill-tag">Python</li>
+            </ul>
+          </div>
+
+          <!-- Backend -->
+          <div class="skill-category-card">
+            <div class="category-icon">⚙️</div>
+            <h3 class="category-name">Backend</h3>
+            <ul class="skill-items">
+              <li class="skill-tag">Laravel</li>
+            </ul>
+          </div>
+
+          <!-- Database -->
+          <div class="skill-category-card">
+            <div class="category-icon">🗄️</div>
+            <h3 class="category-name">Database</h3>
+            <ul class="skill-items">
+              <li class="skill-tag">MySQL</li>
+              <li class="skill-tag">PostgreSQL</li>
+            </ul>
+          </div>
+
+          <!-- API -->
+          <div class="skill-category-card">
+            <div class="category-icon">🔌</div>
+            <h3 class="category-name">API</h3>
+            <ul class="skill-items">
+              <li class="skill-tag">REST API</li>
+            </ul>
+          </div>
+
+          <!-- Tools & DevOps -->
+          <div class="skill-category-card">
+            <div class="category-icon">🛠️</div>
+            <h3 class="category-name">Tools & DevOps</h3>
+            <ul class="skill-items">
+              <li class="skill-tag">Git</li>
+              <li class="skill-tag">Docker</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 4: Projects -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Portofolio</span>
+          <h2 class="section-title">Projects</h2>
+          <p class="section-desc">Implementasi nyata pada pengembangan backend, arsitektur REST API, dan manajemen database:</p>
+        </div>
+
+        <div class="projects-list">
+          <!-- Project 1: REST API Mobile (Prioritas Utama) -->
+          <article class="project-card priority-featured">
+            <div class="project-badge-row">
+              <span class="priority-badge">Prioritas #1 (Rekomendasi Utama)</span>
+              <div class="project-tech-stack">
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">Laravel</span>
+                <span class="tech-pill">REST API</span>
+                <span class="tech-pill">MySQL</span>
+              </div>
+            </div>
+            
+            <h3 class="project-title">REST API untuk Aplikasi Mobile</h3>
+            <p class="project-overview">
+              Layanan RESTful API yang dirancang untuk mendukung kebutuhan komunikasi data dan autentikasi pengguna pada aplikasi mobile.
+            </p>
+
+            <div class="project-details-grid">
+              <div class="detail-group">
+                <h4 class="detail-label">Problem</h4>
+                <p class="detail-content">Aplikasi mobile membutuhkan endpoint backend yang aman, terstandarisasi, dan terpusat untuk memproses autentikasi serta pengelolaan data pengguna.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Solution</h4>
+                <p class="detail-content">Membangun arsitektur REST API menggunakan Laravel dan database MySQL yang menyediakan respons data konsisten dalam format JSON dengan validasi data yang ketat.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Key Features</h4>
+                <ul class="feature-list">
+                  <li>Endpoint Autentikasi Pengguna</li>
+                  <li>Endpoint Pengelolaan Data (CRUD)</li>
+                  <li>Validasi Payload Request & Response JSON Terstruktur</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">My Role</h4>
+                <p class="detail-content">Backend Developer (merancang rute API, membuat controller, menangani logika autentikasi, dan merancang query database MySQL).</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Development Process</h4>
+                <p class="detail-content">Perancangan struktur endpoint RESTful, implementasi routing dan middleware autentikasi di Laravel, integrasi schema database MySQL, serta verifikasi respons endpoint.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Result</h4>
+                <p class="detail-content">Endpoint API berhasil diimplementasikan dan siap diintegrasikan dengan aplikasi mobile client. <em>[Belum diisi jika ada metrik respons/skala]</em></p>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <span class="project-link-item"><strong>GitHub:</strong> [Belum diisi]</span>
+              <span class="project-link-item"><strong>Demo:</strong> [Belum diisi]</span>
+            </div>
+          </article>
+
+          <!-- Project 2: Sistem Informasi Inventaris -->
+          <article class="project-card">
+            <div class="project-badge-row">
+              <span class="priority-badge secondary">Prioritas #2</span>
+              <div class="project-tech-stack">
+                <span class="tech-pill">PHP</span>
+                <span class="tech-pill">Laravel</span>
+                <span class="tech-pill">MySQL</span>
+              </div>
+            </div>
+
+            <h3 class="project-title">Sistem Informasi Inventaris</h3>
+            <p class="project-overview">
+              Sistem backend manajemen inventaris untuk mengelola alur data barang, kategori, pembaruan stok, dan riwayat transaksi secara terpadu.
+            </p>
+
+            <div class="project-details-grid">
+              <div class="detail-group">
+                <h4 class="detail-label">Problem</h4>
+                <p class="detail-content">Diperlukan sistem pencatatan data inventaris yang terpusat untuk meminimalisir kesalahan perhitungan stok dan pelacakan transaksi barang.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Solution</h4>
+                <p class="detail-content">Mengembangkan backend menggunakan Laravel dengan perancangan basis data relasional MySQL untuk mencatat pergerakan barang dan transaksi secara akurat.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Key Features</h4>
+                <ul class="feature-list">
+                  <li>Autentikasi & Hak Akses Pengguna (Login)</li>
+                  <li>Manajemen Data Barang & Kategori</li>
+                  <li>Manajemen dan Pemantauan Stok Barang</li>
+                  <li>Pencatatan Riwayat Transaksi Barang</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">My Role</h4>
+                <p class="detail-content">Backend Developer & Database Designer (bertanggung jawab penuh pada arsitektur backend dan skema database).</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Development Process</h4>
+                <p class="detail-content">Normalisasi skema tabel database MySQL, pembuatan Eloquent models dan controllers di Laravel, implementasi logika pembaruan stok otomatis saat transaksi berlangsung.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Result</h4>
+                <p class="detail-content">Sistem backend dan database berhasil berfungsi dengan baik untuk menangani transaksi serta pembaruan data stok inventaris. <em>[Belum diisi]</em></p>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <span class="project-link-item"><strong>GitHub:</strong> [Belum diisi]</span>
+              <span class="project-link-item"><strong>Demo:</strong> [Belum diisi]</span>
+            </div>
+          </article>
+
+          <!-- Project 3: Sistem Monitoring Data -->
+          <article class="project-card">
+            <div class="project-badge-row">
+              <span class="priority-badge secondary">Prioritas #3</span>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">PostgreSQL</span>
+                <span class="tech-pill">REST API</span>
+              </div>
+            </div>
+
+            <h3 class="project-title">Sistem Monitoring Data</h3>
+            <p class="project-overview">
+              Sistem backend berbasis Python untuk menerima aliran data pemantauan, menyimpannya ke PostgreSQL, dan menyediakannya kembali melalui antarmuka API.
+            </p>
+
+            <div class="project-details-grid">
+              <div class="detail-group">
+                <h4 class="detail-label">Problem</h4>
+                <p class="detail-content">Kebutuhan layanan penerima data monitoring yang dapat menyimpan entri data secara andal dan menyediakan endpoint untuk akses data historis.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Solution</h4>
+                <p class="detail-content">Merancang layanan backend dengan Python serta basis data relasional PostgreSQL untuk menangani penyimpanan dan penyajian data monitoring melalui API.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Key Features</h4>
+                <ul class="feature-list">
+                  <li>Endpoint Penerimaan Data (Data Ingestion API)</li>
+                  <li>Penyimpanan Data Terstruktur ke PostgreSQL</li>
+                  <li>Endpoint Penyedia Data Monitoring (Data Retrieval API)</li>
+                </ul>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">My Role</h4>
+                <p class="detail-content">Backend Developer (mengembangkan pipeline backend untuk penerimaan, penyimpanan, dan penyediaan data via API).</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Development Process</h4>
+                <p class="detail-content">Perancangan skema tabel data di PostgreSQL, pembuatan handler API berbasis Python untuk menerima data incoming, serta pengujian query pengambilan data.</p>
+              </div>
+              <div class="detail-group">
+                <h4 class="detail-label">Result</h4>
+                <p class="detail-content">Sistem backend berhasil memproses data masuk dan menyediakan akses data monitoring secara stabil melalui API. <em>[Belum diisi]</em></p>
+              </div>
+            </div>
+
+            <div class="project-links">
+              <span class="project-link-item"><strong>GitHub:</strong> [Belum diisi]</span>
+              <span class="project-link-item"><strong>Demo:</strong> [Belum diisi]</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 5: Experience -->
+    <section class="section experience" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Pengalaman</span>
+          <h2 class="section-title">Experience</h2>
+          <p class="section-desc">Pengalaman pengembangan sistem backend dan perangkat lunak:</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-period">Project-Based & Akademik</span>
+              <h3 class="timeline-role">Backend Developer (Academic & Independent Projects)</h3>
+              <p class="timeline-desc">
+                Mengembangkan berbagai aplikasi dan sistem backend untuk kebutuhan akademik, proyek mandiri, dan implementasi fungsional:
+              </p>
+              <ul class="timeline-bullets">
+                <li>Mengembangkan arsitektur server-side dan database relasional untuk sistem inventaris berbasis Laravel dan MySQL.</li>
+                <li>Merancang dan menguji endpoint REST API untuk kebutuhan konsumsi data pada aplikasi mobile.</li>
+                <li>Membangun backend ingestion dan retrieval data monitoring menggunakan bahasa Python dan PostgreSQL.</li>
+                <li>Menerapkan version control menggunakan Git dan standardisasi deployment lingkungan dengan Docker.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 6: Education -->
+    <section class="section education" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Latar Belakang</span>
+          <h2 class="section-title">Education</h2>
+        </div>
+
+        <div class="education-card">
+          <div class="edu-icon">🎓</div>
+          <div class="edu-info">
+            <h3 class="edu-degree">S1 Teknik Informatika</h3>
+            <p class="edu-instansi">[Belum diisi - Nama Universitas / Institut]</p>
+            <p class="edu-period">[Belum diisi - Tahun Kelulusan]</p>
+            <p class="edu-desc">
+              Memperoleh fondasi komprehensif dalam rekayasa perangkat lunak, perancangan basis data, algoritma & struktur data, serta arsitektur sistem informasi.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 7: Contact -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-label">Hubungi</span>
+          <h2 class="section-title">Contact</h2>
+          <p class="section-desc">Terbuka untuk diskusi mengenai peluang kerja Backend Developer maupun kerja sama proyek:</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info-card">
+            <h3 class="contact-heading">Informasi Kontak</h3>
+            <p class="contact-text">Silakan hubungi saya melalui saluran berikut untuk diskusi lebih lanjut:</p>
+            
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="contact-icon">✉️</span>
+                <div>
+                  <span class="contact-name">Email</span>
+                  <p class="contact-val">[Belum diisi - email@example.com]</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">🐙</span>
+                <div>
+                  <span class="contact-name">GitHub</span>
+                  <p class="contact-val">[Belum diisi - github.com/username]</p>
+                </div>
+              </div>
+
+              <div class="contact-item">
+                <span class="contact-icon">💼</span>
+                <div>
+                  <span class="contact-name">LinkedIn</span>
+                  <p class="contact-val">[Belum diisi - linkedin.com/in/username]</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-message-card">
+            <h3 class="contact-heading">Kirim Pesan</h3>
+            <form id="contactForm" class="contact-form" onsubmit="event.preventDefault(); alert('Terima kasih. Formulir ini merupakan template portofolio.');">
+              <div class="form-group">
+                <label for="name">Nama</label>
+                <input type="text" id="name" placeholder="Nama Anda" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="email@perusahaan.com" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" rows="4" placeholder="Tuliskan pesan atau penawaran kerja sama..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-container">
+      <p class="footer-copy">&copy; <span id="currentYear"></span> Backend Developer Portfolio. Dibangun dengan HTML, CSS, dan JavaScript.</p>
+      <a href="#home" class="back-to-top">Kembali ke Atas ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
