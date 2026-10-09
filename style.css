@@ -1,22 +1,28 @@
 /* ==========================================================================
-   Base & Reset Variables
+   Base & Reset Variables - Tema Kuning Putih (Warm Yellow & Crisp White)
    ========================================================================== */
 :root {
-  --bg-primary: #0a0f1d;
-  --bg-secondary: #0f172a;
-  --bg-card: #141e33;
-  --bg-card-hover: #19253f;
-  --border-color: #24324f;
-  --border-focus: #38bdf8;
+  /* Backgrounds: Putih & Nuansa Kuning Hangat */
+  --bg-primary: #fffdf5;          /* Latar utama: putih gading hangat */
+  --bg-secondary: #fefce8;        /* Latar sekunder: kuning pastel sangat lembut */
+  --bg-card: #ffffff;             /* Kartu: putih bersih */
+  --bg-card-hover: #fefce8;       /* Hover kartu: kuning lembut */
   
-  --text-main: #f1f5f9;
-  --text-muted: #94a3b8;
-  --text-dim: #64748b;
+  /* Borders */
+  --border-color: #fef08a;        /* Garis batas kuning lembut */
+  --border-subtle: #fef9c3;       /* Garis batas sangat tipis */
+  --border-focus: #eab308;        /* Kuning aksen saat fokus/hover */
   
-  --accent-cyan: #38bdf8;
-  --accent-blue: #3b82f6;
-  --accent-emerald: #10b981;
-  --accent-amber: #f59e0b;
+  /* Typography - Kontras tinggi agar nyaman dibaca recruiter */
+  --text-main: #0f172a;           /* Teks utama: gelap pekat (slate gelap) */
+  --text-muted: #334155;          /* Teks sekunder/paragraf */
+  --text-dim: #64748b;            /* Teks redup/keterangan */
+  
+  /* Accents Kuning & Emas */
+  --accent-yellow: #ca8a04;       /* Kuning tua/emas untuk teks aksen & link */
+  --accent-yellow-light: #fef9c3; /* Kuning muda untuk latar tag */
+  --accent-yellow-bold: #eab308;  /* Kuning utama untuk tombol & penanda */
+  --accent-yellow-dark: #854d0e;  /* Teks kuning gelap untuk keterbacaan badge */
   
   --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-mono: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
@@ -26,9 +32,9 @@
   --radius-lg: 16px;
   
   --transition: all 0.25s ease-in-out;
-  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
-  --shadow-glow: 0 0 25px rgba(56, 189, 248, 0.15);
+  --shadow-sm: 0 2px 8px rgba(202, 138, 4, 0.08);
+  --shadow-md: 0 10px 25px -5px rgba(202, 138, 4, 0.12);
+  --shadow-glow: 0 0 25px rgba(234, 179, 8, 0.25);
 }
 
 *, *::before, *::after {
@@ -75,7 +81,7 @@ ul {
 
 .section {
   padding: 5rem 0;
-  border-bottom: 1px solid rgba(36, 50, 79, 0.5);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .section-header {
@@ -86,8 +92,8 @@ ul {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--accent-cyan);
+  font-weight: 700;
+  color: var(--accent-yellow);
   text-transform: uppercase;
   letter-spacing: 0.1em;
   margin-bottom: 0.5rem;
@@ -95,7 +101,7 @@ ul {
 
 .section-title {
   font-size: 2.25rem;
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.02em;
   color: var(--text-main);
   line-height: 1.2;
@@ -115,8 +121,8 @@ ul {
   justify-content: center;
   font-family: var(--font-sans);
   font-size: 0.95rem;
-  font-weight: 600;
-  padding: 0.75rem 1.5rem;
+  font-weight: 700;
+  padding: 0.75rem 1.6rem;
   border-radius: var(--radius-md);
   cursor: pointer;
   border: 1px solid transparent;
@@ -124,26 +130,27 @@ ul {
 }
 
 .btn-primary {
-  background-color: var(--accent-cyan);
-  color: #04101e;
+  background-color: var(--accent-yellow-bold);
+  color: #422006;
+  box-shadow: 0 4px 14px rgba(234, 179, 8, 0.35);
 }
 
 .btn-primary:hover {
-  background-color: #7dd3fc;
-  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+  background-color: #facc15;
+  box-shadow: 0 6px 20px rgba(234, 179, 8, 0.5);
   transform: translateY(-2px);
 }
 
 .btn-secondary {
-  background-color: transparent;
+  background-color: #ffffff;
   color: var(--text-main);
-  border-color: var(--border-color);
+  border-color: #fde047;
 }
 
 .btn-secondary:hover {
-  background-color: var(--bg-card);
-  border-color: var(--accent-cyan);
-  color: var(--accent-cyan);
+  background-color: #fefce8;
+  border-color: var(--accent-yellow-bold);
+  color: var(--accent-yellow-dark);
   transform: translateY(-2px);
 }
 
@@ -158,7 +165,7 @@ ul {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(10, 15, 29, 0.85);
+  background-color: rgba(255, 253, 245, 0.92);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
   transition: var(--transition);
@@ -175,14 +182,19 @@ ul {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.25rem;
+  color: var(--text-main);
 }
 
 .logo-symbol {
   font-family: var(--font-mono);
-  color: var(--accent-cyan);
-  font-weight: 600;
+  color: var(--accent-yellow);
+  font-weight: 700;
+  background-color: var(--accent-yellow-light);
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid #fde047;
 }
 
 .logo-text {
@@ -196,8 +208,8 @@ ul {
 }
 
 .nav-link {
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
   color: var(--text-muted);
   position: relative;
   padding: 0.25rem 0;
@@ -205,7 +217,7 @@ ul {
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--accent-cyan);
+  color: var(--accent-yellow-dark);
 }
 
 .nav-link.active::after {
@@ -214,8 +226,8 @@ ul {
   bottom: -4px;
   left: 0;
   width: 100%;
-  height: 2px;
-  background-color: var(--accent-cyan);
+  height: 2.5px;
+  background-color: var(--accent-yellow-bold);
   border-radius: 2px;
 }
 
@@ -256,15 +268,16 @@ ul {
 }
 
 /* ==========================================================================
-   Hero Section
+   Hero Section (Kuning & Putih)
    ========================================================================== */
 .hero {
-  padding: 6rem 0 5rem;
+  padding: 5.5rem 0 5rem;
   min-height: calc(100vh - 4.25rem);
   display: flex;
   align-items: center;
-  background: radial-gradient(circle at 10% 20%, rgba(56, 189, 248, 0.05) 0%, transparent 40%),
-              radial-gradient(circle at 90% 80%, rgba(16, 185, 129, 0.04) 0%, transparent 40%);
+  background: radial-gradient(circle at 15% 25%, rgba(254, 240, 138, 0.45) 0%, transparent 45%),
+              radial-gradient(circle at 85% 75%, rgba(253, 224, 71, 0.3) 0%, transparent 50%),
+              var(--bg-primary);
 }
 
 .hero-container {
@@ -277,13 +290,13 @@ ul {
 .hero-badge {
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
-  background-color: rgba(16, 185, 129, 0.1);
-  color: var(--accent-emerald);
-  border: 1px solid rgba(16, 185, 129, 0.25);
+  gap: 0.55rem;
+  background-color: #fef9c3;
+  color: var(--accent-yellow-dark);
+  border: 1px solid #fde047;
   font-size: 0.85rem;
-  font-weight: 500;
-  padding: 0.4rem 0.9rem;
+  font-weight: 600;
+  padding: 0.4rem 0.95rem;
   border-radius: 9999px;
   margin-bottom: 1.25rem;
 }
@@ -291,37 +304,38 @@ ul {
 .status-dot {
   width: 8px;
   height: 8px;
-  background-color: var(--accent-emerald);
+  background-color: var(--accent-yellow-bold);
   border-radius: 50%;
-  box-shadow: 0 0 10px var(--accent-emerald);
+  box-shadow: 0 0 8px var(--accent-yellow-bold);
   animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
   0% { transform: scale(0.95); opacity: 0.8; }
-  50% { transform: scale(1.2); opacity: 1; }
+  50% { transform: scale(1.25); opacity: 1; }
   100% { transform: scale(0.95); opacity: 0.8; }
 }
 
 .hero-title {
-  font-size: 2.75rem;
-  font-weight: 700;
+  font-size: 2.85rem;
+  font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.15;
   margin-bottom: 1rem;
+  color: var(--text-main);
 }
 
 .hero-tagline {
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: var(--accent-cyan);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent-yellow-dark);
   margin-bottom: 1rem;
 }
 
 .hero-desc {
   font-size: 1.05rem;
   color: var(--text-muted);
-  line-height: 1.7;
+  line-height: 1.75;
   margin-bottom: 2rem;
 }
 
@@ -331,19 +345,19 @@ ul {
   flex-wrap: wrap;
 }
 
-/* Terminal Card in Hero */
+/* Terminal Card in Hero (Clean Dark Slate Card on Yellow/White for high visual impact) */
 .terminal-card {
-  background-color: var(--bg-card);
-  border: 1px solid var(--border-color);
+  background-color: #0f172a;
+  border: 2px solid #fde047;
   border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md), var(--shadow-glow);
+  box-shadow: 0 20px 35px -10px rgba(202, 138, 4, 0.25);
   overflow: hidden;
 }
 
 .terminal-header {
-  background-color: #0c1424;
+  background-color: #020617;
   padding: 0.75rem 1rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid #1e293b;
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -356,13 +370,13 @@ ul {
 }
 
 .dot.red { background-color: #ef4444; }
-.dot.yellow { background-color: #f59e0b; }
+.dot.yellow { background-color: #facc15; }
 .dot.green { background-color: #10b981; }
 
 .terminal-title {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--text-dim);
+  color: #94a3b8;
   margin-left: 0.5rem;
 }
 
@@ -371,12 +385,12 @@ ul {
   font-family: var(--font-mono);
   font-size: 0.85rem;
   line-height: 1.7;
-  color: var(--text-muted);
+  color: #cbd5e1;
   overflow-x: auto;
 }
 
 .token-key {
-  color: #38bdf8;
+  color: #facc15;
 }
 
 .token-str {
@@ -386,6 +400,10 @@ ul {
 /* ==========================================================================
    About Me Section
    ========================================================================== */
+.about {
+  background-color: #ffffff;
+}
+
 .about-grid {
   display: grid;
   grid-template-columns: 1.4fr 1fr;
@@ -397,7 +415,7 @@ ul {
   color: var(--text-muted);
   font-size: 1.05rem;
   margin-bottom: 1.25rem;
-  line-height: 1.75;
+  line-height: 1.8;
 }
 
 .about-meta {
@@ -407,22 +425,25 @@ ul {
 }
 
 .meta-card {
-  background-color: var(--bg-card);
+  background-color: #fffdf5;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 1.25rem;
   transition: var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
 .meta-card:hover {
-  border-color: var(--border-focus);
+  border-color: var(--accent-yellow-bold);
+  background-color: #fefce8;
   transform: translateY(-2px);
 }
 
 .meta-title {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--accent-cyan);
+  font-weight: 700;
+  color: var(--accent-yellow-dark);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.25rem;
@@ -430,13 +451,17 @@ ul {
 
 .meta-value {
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-main);
 }
 
 /* ==========================================================================
    Skills Section
    ========================================================================== */
+.skills {
+  background-color: var(--bg-primary);
+}
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -449,12 +474,14 @@ ul {
   border-radius: var(--radius-lg);
   padding: 1.5rem;
   transition: var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
 .skill-category-card:hover {
-  border-color: var(--border-focus);
+  border-color: var(--accent-yellow-bold);
   transform: translateY(-3px);
-  box-shadow: var(--shadow-sm);
+  box-shadow: var(--shadow-md);
+  background-color: #fffef9;
 }
 
 .category-icon {
@@ -464,7 +491,7 @@ ul {
 
 .category-name {
   font-size: 1.05rem;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--text-main);
   margin-bottom: 1rem;
   border-bottom: 1px solid var(--border-color);
@@ -480,10 +507,10 @@ ul {
 .skill-tag {
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  font-weight: 500;
-  background-color: rgba(56, 189, 248, 0.08);
-  color: var(--accent-cyan);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  font-weight: 600;
+  background-color: #fef9c3;
+  color: var(--accent-yellow-dark);
+  border: 1px solid #fde047;
   padding: 0.35rem 0.75rem;
   border-radius: var(--radius-sm);
 }
@@ -491,6 +518,10 @@ ul {
 /* ==========================================================================
    Projects Section
    ========================================================================== */
+.projects {
+  background-color: #ffffff;
+}
+
 .projects-list {
   display: flex;
   flex-direction: column;
@@ -498,22 +529,23 @@ ul {
 }
 
 .project-card {
-  background-color: var(--bg-card);
+  background-color: #fffdf5;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 2rem;
+  padding: 2.25rem;
   transition: var(--transition);
-  position: relative;
+  box-shadow: var(--shadow-sm);
 }
 
 .project-card:hover {
-  border-color: var(--border-focus);
+  border-color: var(--accent-yellow-bold);
   box-shadow: var(--shadow-md);
 }
 
 .project-card.priority-featured {
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  background: linear-gradient(180deg, rgba(20, 30, 51, 1) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border: 2px solid #facc15;
+  background: linear-gradient(180deg, #ffffff 0%, #fffdf0 100%);
+  box-shadow: 0 8px 24px rgba(234, 179, 8, 0.15);
 }
 
 .project-badge-row {
@@ -528,18 +560,18 @@ ul {
 .priority-badge {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  font-weight: 600;
-  background-color: rgba(56, 189, 248, 0.15);
-  color: var(--accent-cyan);
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  padding: 0.3rem 0.75rem;
+  font-weight: 700;
+  background-color: #fef08a;
+  color: #713f12;
+  border: 1px solid #facc15;
+  padding: 0.35rem 0.85rem;
   border-radius: 9999px;
 }
 
 .priority-badge.secondary {
-  background-color: rgba(148, 163, 184, 0.1);
-  color: var(--text-muted);
-  border-color: rgba(148, 163, 184, 0.2);
+  background-color: #fef9c3;
+  color: #854d0e;
+  border-color: #fde047;
 }
 
 .project-tech-stack {
@@ -551,16 +583,17 @@ ul {
 .tech-pill {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  background-color: rgba(255, 255, 255, 0.05);
-  color: var(--text-muted);
-  border: 1px solid var(--border-color);
+  font-weight: 600;
+  background-color: #ffffff;
+  color: var(--accent-yellow-dark);
+  border: 1px solid #fde047;
   padding: 0.2rem 0.55rem;
   border-radius: var(--radius-sm);
 }
 
 .project-title {
-  font-size: 1.6rem;
-  font-weight: 700;
+  font-size: 1.65rem;
+  font-weight: 800;
   margin-bottom: 0.5rem;
   color: var(--text-main);
 }
@@ -568,7 +601,7 @@ ul {
 .project-overview {
   font-size: 1.05rem;
   color: var(--text-muted);
-  line-height: 1.6;
+  line-height: 1.65;
   margin-bottom: 1.75rem;
 }
 
@@ -576,10 +609,10 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
-  background-color: rgba(10, 15, 29, 0.4);
+  background-color: #ffffff;
   padding: 1.5rem;
   border-radius: var(--radius-md);
-  border: 1px solid rgba(36, 50, 79, 0.5);
+  border: 1px solid var(--border-color);
   margin-bottom: 1.5rem;
 }
 
@@ -592,16 +625,16 @@ ul {
 .detail-label {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 700;
   text-transform: uppercase;
-  color: var(--accent-cyan);
+  color: var(--accent-yellow-dark);
   letter-spacing: 0.04em;
 }
 
 .detail-content {
   font-size: 0.95rem;
   color: var(--text-muted);
-  line-height: 1.55;
+  line-height: 1.6;
 }
 
 .feature-list {
@@ -626,15 +659,19 @@ ul {
 }
 
 .project-link-item strong {
-  color: var(--text-muted);
+  color: var(--text-main);
 }
 
 /* ==========================================================================
    Experience Section (Timeline)
    ========================================================================== */
+.experience {
+  background-color: var(--bg-primary);
+}
+
 .timeline {
   position: relative;
-  border-left: 2px solid var(--border-color);
+  border-left: 2px solid #facc15;
   padding-left: 2rem;
   margin-left: 1rem;
 }
@@ -651,30 +688,34 @@ ul {
   width: 14px;
   height: 14px;
   border-radius: 50%;
-  background-color: var(--accent-cyan);
-  border: 3px solid var(--bg-primary);
-  box-shadow: 0 0 10px var(--accent-cyan);
+  background-color: var(--accent-yellow-bold);
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 8px rgba(234, 179, 8, 0.6);
 }
 
 .timeline-content {
-  background-color: var(--bg-card);
+  background-color: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .timeline-period {
   display: inline-block;
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--accent-cyan);
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-weight: 700;
+  color: var(--accent-yellow-dark);
+  background-color: #fef9c3;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 0.6rem;
 }
 
 .timeline-role {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text-main);
   margin-bottom: 0.75rem;
 }
@@ -699,8 +740,12 @@ ul {
 /* ==========================================================================
    Education Section
    ========================================================================== */
+.education {
+  background-color: #ffffff;
+}
+
 .education-card {
-  background-color: var(--bg-card);
+  background-color: #fffdf5;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 2rem;
@@ -708,10 +753,12 @@ ul {
   gap: 1.75rem;
   align-items: flex-start;
   transition: var(--transition);
+  box-shadow: var(--shadow-sm);
 }
 
 .education-card:hover {
-  border-color: var(--border-focus);
+  border-color: var(--accent-yellow-bold);
+  box-shadow: var(--shadow-md);
 }
 
 .edu-icon {
@@ -721,15 +768,15 @@ ul {
 
 .edu-degree {
   font-size: 1.4rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--text-main);
   margin-bottom: 0.25rem;
 }
 
 .edu-instansi {
   font-size: 1.05rem;
-  color: var(--accent-cyan);
-  font-weight: 500;
+  color: var(--accent-yellow-dark);
+  font-weight: 600;
   margin-bottom: 0.25rem;
 }
 
@@ -743,12 +790,16 @@ ul {
 .edu-desc {
   color: var(--text-muted);
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 /* ==========================================================================
    Contact Section
    ========================================================================== */
+.contact {
+  background-color: var(--bg-primary);
+}
+
 .contact-grid {
   display: grid;
   grid-template-columns: 1fr 1.2fr;
@@ -757,16 +808,18 @@ ul {
 
 .contact-info-card,
 .contact-message-card {
-  background-color: var(--bg-card);
+  background-color: #ffffff;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
   padding: 2rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .contact-heading {
   font-size: 1.25rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 0.75rem;
+  color: var(--text-main);
 }
 
 .contact-text {
@@ -789,19 +842,24 @@ ul {
 
 .contact-icon {
   font-size: 1.5rem;
+  background-color: #fef9c3;
+  padding: 0.4rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid #fde047;
 }
 
 .contact-name {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--text-dim);
+  color: var(--accent-yellow-dark);
+  font-weight: 700;
   text-transform: uppercase;
 }
 
 .contact-val {
   font-size: 0.95rem;
   color: var(--text-main);
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .contact-form {
@@ -818,13 +876,13 @@ ul {
 
 .form-group label {
   font-size: 0.85rem;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-weight: 600;
+  color: var(--text-main);
 }
 
 .form-group input,
 .form-group textarea {
-  background-color: #0b1222;
+  background-color: #fffdf5;
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   padding: 0.75rem 1rem;
@@ -837,8 +895,9 @@ ul {
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+  border-color: var(--accent-yellow-bold);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.2);
 }
 
 /* ==========================================================================
@@ -846,7 +905,7 @@ ul {
    ========================================================================== */
 .footer {
   padding: 2.5rem 0;
-  background-color: #070b14;
+  background-color: #fefce8;
   border-top: 1px solid var(--border-color);
 }
 
@@ -866,11 +925,13 @@ ul {
 .back-to-top {
   font-family: var(--font-mono);
   font-size: 0.85rem;
-  color: var(--accent-cyan);
+  font-weight: 600;
+  color: var(--accent-yellow-dark);
 }
 
 .back-to-top:hover {
   text-decoration: underline;
+  color: var(--accent-yellow);
 }
 
 /* ==========================================================================
@@ -913,8 +974,9 @@ ul {
     top: 4.25rem;
     left: 0;
     width: 100%;
-    background-color: var(--bg-primary);
+    background-color: #ffffff;
     border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05);
     padding: 1.5rem;
     display: none;
   }
